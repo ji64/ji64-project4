@@ -1,6 +1,6 @@
 """This tests the pages"""
 
-def base_request_test(client):
+def test_base_request(client):
     """This tests that base.html is accessible"""
     response = client.get("/")
     assert response.status_code == 200
